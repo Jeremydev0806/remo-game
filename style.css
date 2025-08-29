@@ -22,17 +22,15 @@ h1 {
   margin: 0 auto;
 }
 
-/* 🔹 Mantiene el tamaño normal en PC */
 #game-canvas {
   width: 600px;
   height: 400px;
 }
 
-/* 🔹 SOLO en pantallas pequeñas se adapta */
 @media (max-width: 768px) {
   #game-canvas {
-    width: 95vw;   /* ocupa casi todo el ancho del cel */
-    height: auto;  /* mantiene la proporción */
+    width: 95vw;  
+    height: auto;  
   }
 }
 
