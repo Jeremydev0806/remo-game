@@ -44,7 +44,7 @@ let lastMessageScore = 0;
 let leftPressed = false;
 let rightPressed = false;
 
-// Helper: draw remolacha (beet) character
+
 function drawBeet(x, y, w, h, direction) {
   ctx.save();
   ctx.translate(x + w/2, y + h/2);
