@@ -294,10 +294,10 @@ function draw() {
     ctx.fillRect(W/2-140,H/2-60,280,120);
     ctx.globalAlpha = 1;
     ctx.fillStyle = "#a1005e";
-    ctx.font = "bold 32px Comic Sans MS";
+    ctx.font = "bold 32px Arial";   // 👈 cambiado
     ctx.textAlign = "center";
     ctx.fillText("¡UYYYY Perdiste!", W/2, H/2-10);
-    ctx.font = "20px Comic Sans MS";
+    ctx.font = "20px Arial";        // 👈 cambiado
     ctx.fillText(" Saltos: " + score, W/2, H/2+24);
     ctx.fillText("High Score: " + highScore, W/2, H/2+52);
     ctx.restore();
