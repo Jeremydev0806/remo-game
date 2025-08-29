@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #bbffe3 0%, #faffbb 100%);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #a1005e;
+  margin-top: 24px;
+  font-size: clamp(1.5em, 4vw, 2.5em);
+}
+
+#game-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* para que en PC no sea gigante */
+}
+
+#game-canvas {
+  background: #f8f4ff;
+  border: 4px solid #a1005e;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+  width: 100%;   /* que se ajuste al contenedor */
+  height: auto;  /* mantiene proporción */
+}
+
+#score {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  color: #a1005e;
+  font-size: clamp(1em, 2.5vw, 1.2em);
+  background: rgba(255,255,255,0.8);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: bold;
+  z-index: 3;
+}
+
+#restart-btn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(1em, 2.5vw, 1.2em);
+  padding: 10px 32px;
+  background: #a1005e;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  display: none;
+  z-index: 2;
+}
+
+#restart-btn:hover {
+  background: #faffbb;
+  color: #a1005e;
+  border: 2px solid #a1005e;
+}
+
+#message {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffa700;
+  font-size: clamp(1.2em, 5vw, 2em);
+  font-weight: bold;
+  background: rgba(255,255,255,0.85);
+  border-radius: 18px;
+  padding: 12px 24px;
+  z-index: 10;
+  display: none;
+  pointer-events: none;
+  box-shadow: 0 0 24px 4px #ffa70066;
+}
+
+/* 🔹 Ajustes extra para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  #score {
+    top: 4px;
+    left: 8px;
+    padding: 2px 8px;
+  }
+
+  #restart-btn {
+    padding: 8px 20px;
+  }
+
+  #message {
+    padding: 8px 16px;
+  }
+}
